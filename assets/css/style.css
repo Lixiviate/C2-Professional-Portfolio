@@ -131,6 +131,9 @@ header nav ul li a:hover {
 .card:hover {
   background: var(--card-dark);
 }
+.card:first-child {
+  flex: 2 500px;
+}
 
 .card-content {
   display: flex;
