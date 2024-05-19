@@ -27,6 +27,7 @@ body {
   padding: 10px;
 }
 
+/* Header and Navigation Bar */
 header {
   background-color: var(--header-bg);
   padding: 20px;
@@ -62,6 +63,7 @@ header nav ul li a:hover {
   border-radius: 5px;
 }
 
+/* Banner Image */
 .banner {
   display: flex;
   justify-content: center;
@@ -76,6 +78,7 @@ header nav ul li a:hover {
   flex-shrink: 0;
 }
 
+/* About Me Section */
 .about {
   display: flex;
   align-items: center;
@@ -100,6 +103,7 @@ header nav ul li a:hover {
   width: 100%;
 }
 
+/* Portfolio Section */
 .portfolio h2,
 .contact h2 {
   margin-bottom: 15px;
@@ -173,6 +177,7 @@ header nav ul li a:hover {
   background-color: var(--button-hover-bg);
 }
 
+/* Contact Info Section */
 .contact {
   background-color: var(--card-light);
   padding: 20px;
