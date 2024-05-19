@@ -27,7 +27,7 @@ A professional portfolio website showcasing projects and achievements through a 
 
 [Deployed GitHub Page](https://lixiviate.github.io/C2-Professional-Portfolio/)
 
-![Example Screenshot](./assets/images/portfolio-screenshot.png)
+![Example Screenshot](./assets/images/project2.png)
 
 ## Source Code
 
