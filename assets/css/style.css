@@ -2,6 +2,9 @@
 :root {
   --background: #1943c2;
   --whitefont: #ffffff;
+  --carddark: #01650b;
+  --cardlight: #006f0b;
+  --borderdark: #000000;
 }
 
 /* Global/Element Styles */
@@ -14,4 +17,63 @@
 
 body {
   background-color: var(--background);
+  font-family: "Times New Roman", Times, serif;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  text-align: center;
+  margin: 10px;
+}
+
+.portfolio,
+.portfolio-cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.portfolio {
+  flex-direction: column;
+  padding: 15px;
+}
+
+.portfolio-cards {
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 0;
+  list-style: none;
+}
+
+.card {
+  border: 2px dashed var(--borderdark);
+  padding: 20px;
+  margin: 20px;
+  background: var(--cardlight);
+  border-radius: 8px;
+  flex: 1 1 300px;
+  transition: transform 0.3s, box-shadow 0.3s;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card:hover {
+  background: var(--carddark);
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+}
+
+@media (max-width: 1200px) {
+  .card {
+    flex: 1 1 45%;
+  }
+}
+
+@media (max-width: 768px) {
+  .card {
+    flex: 1 1 100%;
+  }
 }
