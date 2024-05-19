@@ -27,7 +27,7 @@ A professional portfolio website showcasing projects and achievements through a 
 
 [Deployed GitHub Page](https://lixiviate.github.io/portfolio)
 
-![Deployed Example Screenshot](./assets/images/portfolio-screenshot.png)
+![Example Screenshot](./assets/images/portfolio-screenshot.png)
 
 ## Source Code
 
