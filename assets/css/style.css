@@ -4,8 +4,8 @@
   --white-font: #ffffff;
   --card-dark: #0f4c75;
   --card-light: #3282b8;
-  --border-dark: #01579b;
-  --header-bg: #0288d1;
+  --border-dark: #1b262c;
+  --header-bg: #172127;
   --button-bg: #00bfa5;
   --button-hover-bg: #00897b;
 }
@@ -23,41 +23,40 @@ body {
   font-family: "Times New Roman", Times, serif;
   display: flex;
   flex-direction: column;
+  line-height: 1.5;
+  padding: 10px;
 }
 
-.header {
+header {
   background-color: var(--header-bg);
   padding: 20px;
   border-radius: 8px;
 }
 
-.header .name {
+header .name {
   font-size: 2em;
-  margin: 5px;
+  font-weight: bold;
 }
 
-.header nav {
+header nav {
   display: flex;
   justify-content: end;
 }
 
-.header nav ul {
+header nav ul {
   display: flex;
   gap: 40px;
   list-style: none;
-  padding: 0;
-  margin: 0;
 }
 
-.header nav ul li a {
+header nav ul li a {
   color: var(--white-font);
   text-decoration: none;
   font-weight: bold;
   padding: 10px 15px;
-  transition: color 0.3s, background-color 0.3s;
 }
 
-.header nav ul li a:hover {
+header nav ul li a:hover {
   background-color: var(--button-bg);
   color: var(--background);
   border-radius: 5px;
@@ -73,7 +72,31 @@ body {
 .banner img {
   max-width: 100%;
   height: auto;
+  border-radius: 40px;
   flex-shrink: 0;
+}
+
+.about {
+  background-color: var(--card-light);
+  padding: 20px;
+  margin: 20px;
+  border-radius: 10px;
+  text-align: justify;
+}
+
+.about h2,
+.portfolio h2,
+.contact h2 {
+  margin-bottom: 15px;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.about p,
+.portfolio p,
+.contact p {
+  margin: 10px 0;
+  font-size: 1.1em;
 }
 
 .portfolio {
@@ -103,14 +126,10 @@ body {
   background: var(--card-light);
   border-radius: 8px;
   flex: 1 1 300px;
-  transition: transform 0.3s, box-shadow 0.3s;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .card:hover {
   background: var(--card-dark);
-  transform: translateY(-5px);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
 }
 
 .card-content {
@@ -127,7 +146,6 @@ body {
   padding: 10px 15px;
   border-radius: 5px;
   text-align: center;
-  transition: background-color 0.3s;
   margin-top: auto;
 }
 
@@ -139,8 +157,7 @@ body {
   background-color: var(--card-light);
   padding: 20px;
   margin: 20px;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
   text-align: center;
 }
 
@@ -152,7 +169,6 @@ body {
   color: var(--button-bg);
   text-decoration: none;
   font-weight: bold;
-  transition: color 0.3s;
 }
 
 .contact a:hover {
